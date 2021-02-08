@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Patua One';
+    src: url('PatuaOne-Regular.eot');
+    src: url('PatuaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PatuaOne-Regular.woff2') format('woff2'),
+        url('PatuaOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
