@@ -1,27 +1,26 @@
 @font-face {
-  font-family: "Patua One";
-  src: url("fonts/PatuaOne/PatuaOne-Regular.eot");
-  src: url("fonts/PatuaOne/PatuaOne-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff2") format("woff2"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Roboto thin';
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.eot');
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "whiteOnBlack";
-  src: url("White_On_Black.ttf");
-  src: url("fonts/PatuaOne/PatuaOne-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff2") format("woff2"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+font-family: 'Roboto Slab';
+src: url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.eot');
+src: url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.woff2') format('woff2'),
+    url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.woff') format('woff');
+font-weight: 600;
+font-style: normal;
+font-display: swap;
 }
 body {
-  font-family: "Patua One", Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
   background: #cc7726;
   margin: 0px;
   /* width: 100%; */
@@ -58,7 +57,7 @@ div#logo img {
 div#nav_principal {
   background-repeat: repeat;
   background-image: url("../img/ebb221cf.png");
-  height: 95px;
+  height: 105px;
   z-index: 3;
   position: relative;
   top: 0;
@@ -71,9 +70,10 @@ div#nav_principal {
 }
 .titulo p {
   margin: 0;
+  font-family:'Roboto Slab' , Arial, Helvetica, sans-serif;
 }
 #subtitulo {
-  font-family: "whiteOnBlack", Arial, Helvetica, sans-serif;
+  font-family:'Roboto thin' , Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -100,12 +100,8 @@ div#portada {
 .menu {
   width: 60%;
   display: inline-block;
-  text-align: right;
-}
-
-.menu {
-  list-style: none;
-  
+  text-align: right; 
+   list-style: none;
 }
 
 .menu > ul> li {
@@ -157,7 +153,7 @@ div#portada {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 550;
-  font-family: Helvetica;
+  /* font-family: Helvetica; */
   color: #ffffff;
   position: relative;
   text-decoration: none;
@@ -197,8 +193,8 @@ div#portada {
   left: 0;
 } */
 
-article{
- column-count: 2;
+.columnas{
+ column-count: 3;
  text-align: justify;
 }
 

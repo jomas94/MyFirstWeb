@@ -1,27 +1,26 @@
 @font-face {
-  font-family: "Patua One";
-  src: url("fonts/PatuaOne/PatuaOne-Regular.eot");
-  src: url("fonts/PatuaOne/PatuaOne-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff2") format("woff2"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Roboto thin';
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.eot');
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "whiteOnBlack";
-  src: url("White_On_Black.ttf");
-  src: url("fonts/PatuaOne/PatuaOne-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff2") format("woff2"),
-    url("fonts/PatuaOne/PatuaOne-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+font-family: 'Roboto Slab';
+src: url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.eot');
+src: url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.woff2') format('woff2'),
+    url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.woff') format('woff');
+font-weight: 600;
+font-style: normal;
+font-display: swap;
 }
 body {
-  font-family: "Patua One", Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
   background: #cc7726;
   margin: 0px;
   /* width: 100%; */
@@ -58,7 +57,7 @@ div#logo img {
 div#nav_principal {
   background-repeat: repeat;
   background-image: url("../img/ebb221cf.png");
-  height: 95px;
+  height: 105px;
   z-index: 3;
   position: relative;
   top: 0;
@@ -69,9 +68,10 @@ div#nav_principal {
 }
 .titulo p {
   margin: 0;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
 }
 #subtitulo {
-  font-family: "whiteOnBlack", Arial, Helvetica, sans-serif;
+  font-family: 'Roboto thin', Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -90,76 +90,57 @@ div#nav_principal {
 
 #portada img{
   width: 100%;
+  /* height: 50%; */
   background-attachment: fixed;
 }
-
+.menu ul{
+    /* background-color: white; */
+    position: relative;
+    /* z-index: -91; */
+}
 .menu {
-  border: #133b85;
-  /* width: 60%; */
-  /* float: inline-start; */
-  display: block;
-  text-align: right;
+  width:15%;
+  /* z-index: 1; */
+  /* border: 2px solid#133b85; */
+  display:block;
+  text-align: center;
+  /* float: right; */
+  position: absolute;
+  top: 220px;
+  margin: 0;
+  /* background-color:white */
+
 }
 .menu ul {
   list-style: none;
-  display: block;
+  display:block;
+  margin: 0;
+  padding: 0.8%;
   /* float: right; */
 }
-
 .menu > ul> li {
-  
-  display: block;
+  background-color: white;
+  display:block;
   padding: 20px;
   margin-top: 5px;
+  
   position: relative;
-  width: 20%;
-  float: right;
+  width: 82%;
+  text-align: center;
+  /* float: right; */
   /* overflow: hidden; */
   border-radius: 5px;
-}
 
-.submenu{
-  display:block;
-  position: absolute;
-  /* background-color: #ffffff; */
-  /* width: 120%; */
-  visibility: hidden;
-  opacity: 0;
-  text-align: left;
-  z-index: 9;
-  margin-top: 10px;
-  left: -20px;
-}
-
-.submenu li a{
-  text-decoration: none;
-  padding: 10px;
-  margin: 2px;
-  display:block;
-  background-color: #cc7726;
-}
-
-.menu li:hover .submenu{
-  visibility: visible;
-  opacity: 1;
-  display:block;
-  /* top: 5px; */
-  
-  /* position:absolute; */
-  /* float: none; */
-  /* top:30px;
-  left:0px; */
-  /* overflow: visible; */
 }
 
 /* aplicado al texto del menu */
 .menu a {
   
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 550;
-  font-family: Helvetica;
-  color: #ffffff;
+  /* font-family: Helvetica; */
+  color: #0e0e0e;
   position: relative;
   text-decoration: none;
   border-radius: 5px;
@@ -169,55 +150,11 @@ div#nav_principal {
   background-color: #cc7726;
 }
 .menu a:hover{
-  color: black;
+  color: rgb(255, 255, 255);
   transition: all 0.3s;
   background-color: #cc7726;
 }
 
-/* .menu > ul > li:after {
-  content: "";
-  top: 0;
-  width: 100%;
-  z-index: -1;
-  left: -100%;
-  height: 60px;
-  background: #cc7726;
-  position: absolute;
-  transition: all 0.35s ease-in-out;
-  transition-duration: 1s;
-  transform-origin: right;
-  transition: transform 0.5s;
-  -webkit-transition: all 0.35s ease-in-out;
-} */
-/* .menu ul li:nth-child(1):hover:after,
-.menu ul li:nth-child(2):hover:after,
-.menu ul li:nth-child(3):hover:after,
-.menu ul li:nth-child(4):hover:after,
-.menu ul li:nth-child(5):hover:after {
-  left: 0;
-} */
-
-/* .menu ul li:after {
-  content: "";
-  top: 0;
-  width: 100%;
-  z-index: -1;
-  left: -100%;
-  height: 60px;
-  background: #cc7726;
-  position: absolute;
-  transition: all 0.35s ease-in-out;
-  transition-duration: 1s;
-  transform-origin: right;
-  transition: transform 0.5s;
-  -webkit-transition: all 0.35s ease-in-out;
-}
-.menu ul li:nth-child(1):hover:after,
-.menu ul li:nth-child(2):hover:after,
-.menu ul li:nth-child(3):hover:after,
-.menu ul li:nth-child(4):hover:after,.menu ul li:nth-child(5):hover:after {
-  left: 0;
-} */
 
 h1 {
   text-align: center;

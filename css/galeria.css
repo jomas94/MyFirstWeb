@@ -1,4 +1,5 @@
 @font-face {
+<<<<<<< HEAD
   font-family: "Patua One";
   src: url("fonts/PatuaOne/PatuaOne-Regular.eot");
   src: url("fonts/PatuaOne/PatuaOne-Regular.eot?#iefix")
@@ -22,6 +23,30 @@
 }
 body {
   font-family: "Patua One", Arial, Helvetica, sans-serif;
+=======
+  font-family: 'Roboto thin';
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.eot');
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto_Slab/static/RobotoSlab-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+font-family: 'Roboto Slab';
+src: url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.eot');
+src: url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.woff2') format('woff2'),
+    url('../fonts/Roboto_Slab/static/RobotoSlab-SemiBold.woff') format('woff');
+font-weight: 600;
+font-style: normal;
+font-display: swap;
+}
+body {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+>>>>>>> master
   background: #cc7726;
   margin: 0px;
   /* width: 100%; */
@@ -58,7 +83,11 @@ div#logo img {
 div#nav_principal {
   background-repeat: repeat;
   background-image: url("../img/ebb221cf.png");
+<<<<<<< HEAD
   height: 95px;
+=======
+  height: 105px;
+>>>>>>> master
   z-index: 3;
   position: relative;
   top: 0;
@@ -71,9 +100,16 @@ div#nav_principal {
 }
 .titulo p {
   margin: 0;
+<<<<<<< HEAD
 }
 #subtitulo {
   font-family: "whiteOnBlack", Arial, Helvetica, sans-serif;
+=======
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+#subtitulo {
+  font-family: 'Roboto thin', Arial, Helvetica, sans-serif;
+>>>>>>> master
   padding: 0;
   margin: 0;
   text-align: center;
@@ -100,6 +136,7 @@ div#portada {
 .menu {
   width: 60%;
   display: inline-block;
+<<<<<<< HEAD
   text-align: right;
 }
 
@@ -108,6 +145,13 @@ div#portada {
   
 }
 
+=======
+  text-align: right; 
+  list-style: none;
+}
+
+
+>>>>>>> master
 .menu > ul> li {
   position: relative;
   display: inline-block;
@@ -157,7 +201,11 @@ div#portada {
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 550;
+<<<<<<< HEAD
   font-family: Helvetica;
+=======
+  /* font-family: Helvetica; */
+>>>>>>> master
   color: #ffffff;
   position: relative;
   text-decoration: none;
